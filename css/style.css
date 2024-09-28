@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(30, 32, 43);
+  color: white;
+}
+.navbar {
+  --bs-navbar-color: white;
+}
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.nav-link {
+  border: 2px solid transparent;
+  padding: 5px;
+  border-radius: 30px;
+}
+.navbar-nav .nav-link.active {
+  color: #009ad8;
+  border: 2px solid #009ad8;
+  border-radius: 30px;
+}
+.nav-link:hover {
+  color: #009ad8;
+  border: 2px solid #009ad8;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+.logo h1 {
+  font-size: 16;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.logo p {
+  font-size: 10;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+main {
+  background-color: rgb(30, 32, 43);
+  height: 110vh;
+}
+.content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .bg-img {
+  background-image: url(images/banner.png);
+  background-size: cover;
+  height: 50vh;
+}
+.shearch {
+  margin-block: 80px;
+}
+input {
+  outline: none;
+  background-color: rgb(30, 32, 43);
+  color: white;
+}
+
+.input-group button {
+  right: 5;
+  top: 5;
+  bottom: 5;
+  z-index: 9;
+}
+.weather-content {
+  height: 70vh;
+}
+.foot-first h1 {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  font-weight: 700;
+  margin-block: 40px;
+}
+span {
+  color: rgb(0, 154, 216);
+  font-weight: 400;
+  line-height: 21px;
+}
+.item1 img {
+  width: 20px;
+  height: 20px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.foot-first p,
+.foot-end p {
+  color: rgb(191, 193, 200);
+  font-size: 18px;
+  font-weight: 400;
+}
+.head {
+  font-size: 14px;
+  color: rgb(191, 193, 200);
+}
+.head p {
+  padding: 0;
+  margin: 0;
+}
+.bg-first {
+  background-color: rgb(50, 53, 68);
+  height: 60vh;
+}
+.bg-end {
+  background-color: rgb(38, 41, 54);
+  height: 60vh;
+}
+#tomImg,
+#afterImg {
+  width: 15%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.bg-head-first {
+  background-color: rgb(45, 48, 61);
+}
+.bg-head-second {
+  background-color: rgb(34, 37, 48);
+}
+@media (max-width: 992px) {
+  main {
+    height: 230vh;
+  }
+}
