@@ -40,7 +40,7 @@ function displayTodayData(data) {
   rain.innerHTML = data.current.humidity + "%";
   temp.innerHTML = data.current.temp_c;
   wind.innerHTML = data.current.wind_kph + "km/h";
-  //   todayImg.setAttribute("src", data.current.condition.icon);
+  todayImg.setAttribute("src", "https:" + data.current.condition.icon);
   todaySpan.innerHTML = data.current.condition.text;
   dayName.innerHTML = todayDate.toLocaleDateString("en-UK", {
     weekday: "long",
@@ -59,7 +59,7 @@ function displayTomData(data) {
   tomDayName.innerHTML = forecastData[1].date;
   tom_max_temp.innerHTML = forecastData[1].day.maxtemp_c;
   tom_min_temp.innerHTML = forecastData[1].day.mintemp_c;
-  //   tomImg.setAttribute("src", forecastData[1].day.condition.icon);
+  tomImg.setAttribute("src", "https:" + forecastData[1].day.condition.icon);
   tomSpan.innerHTML = forecastData[1].day.condition.text;
   tomDayName.innerHTML = tomDate.toLocaleDateString("en-UK", {
     weekday: "long",
@@ -67,7 +67,7 @@ function displayTomData(data) {
   afterTomName.innerHTML = forecastData[2].date;
   after_tom_max_temp.innerHTML = forecastData[2].day.maxtemp_c;
   after_tom_min_temp.innerHTML = forecastData[2].day.mintemp_c;
-  //   afterImg.setAttribute("src", forecastData[2].day.condition.icon);
+  afterImg.setAttribute("src", "https:" + forecastData[2].day.condition.icon);
   afterSpan.innerHTML = forecastData[2].day.condition.text;
   //   console.log(forecastData[2].day.condition.text);
   afterTomName.innerHTML = afterDate.toLocaleDateString("en-UK", {
